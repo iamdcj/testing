@@ -15,3 +15,5 @@ The idea of mocking is that the engineer mocks a particular piece of code that i
 ### Stubs 
 The idea of stubs is very similar to mocks; you are replacing code from elsewhere in order to make your tests more predictable - stubs don't replace an entire dependency, instead the 'stub out' a particular piece of functionality from a dependency, replacing it with something that mimics the original functionality, but without needing to do something complex like say a call to the database
 
+### Spies
+These are used for watching functions and events, that is they are used to assert if a function is called and what params it was called with, or maybe what it returns. Spies can also monitor how many times a particular event is triggered.
