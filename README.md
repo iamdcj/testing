@@ -6,3 +6,8 @@ This repository contains a bunch of examples and explanations around the common 
 - **Acceptance/End-to-End/Functional** - these tests are designed to test the functionality of an entire piece of an app, i.e. they test a particular workflow and determine if the flow is robust - a good example of this is a checkout process. 
 
 When an application utilises all of the above the stability of the application can be verified at all levels; the individual pieces, the pieces working together, and the entire application.
+
+
+### Mocking 
+The idea of mocking is that the engineer mocks a particular piece of code that is provided by a dependency, thus allowing the engineer to test their code without having to worry about the third-party code; **an alternate implementation of a dependency controlled by the engineer(s) writing the test(s)**.
+
