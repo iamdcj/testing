@@ -1,6 +1,8 @@
 # Testing JavaScript
 This repository contains a bunch of examples and explanations around the common types of testing;
 
+## Types of Tests
+
 - **Unit** - these types of tests are designed to test small pieces of functionality in isolated - in modern JS applications these often map to modules/components and helper functions. Unit tests are usually the most common types of tests in JS applications.
 - **Integration** - these types of tests are intended to test how modules work not in isolation, but when they're combined together to perform a specific to task.
 - **Acceptance/End-to-End/Functional** - these tests are designed to test the functionality of an entire piece of an app, i.e. they test a particular workflow and determine if the flow is robust - a good example of this is a checkout process. 
@@ -17,3 +19,12 @@ The idea of stubs is very similar to mocks; you are replacing code from elsewher
 
 ### Spies
 These are used for watching functions and events, that is they are used to assert if a function is called and what params it was called with, or maybe what it returns. Spies can also monitor how many times a particular event is triggered.
+
+
+## Organising Tests
+It is best practice to place test files as close to the code as possible, e.g. unit tests should really right next to the modules they're testings.
+
+```
+math.js
+math.test.js
+```
